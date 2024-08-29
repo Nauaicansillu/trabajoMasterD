@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Meta-etiquetas y enlaces -->
+     <!-- Descripción breve -->
+     <meta name="description" content="Páginas de venta de cubos de rubik. Tienda Cubos de Rubik Adrián.">
+     <!-- Lista de palabras clave-->
+     <meta name="keywords" content="tienda, cubos, rubik"> 
+     <!-- Indica a los motores de búsqueda que indexen la página y sigan los enlaces -->
+     <meta name="robots" content="index, follow"> 
+     <!-- Codificación de caracteres a UTF-8 -->
+     <meta charset="UTF-8">
+     <!-- Ajustes para dispositivos móviles -->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Enlace al archivo CSS -->
+     <link rel="stylesheet" type="text/css" href="../css/css-presupuesto.css">
+     <!-- Scripts para el uso de Ionicons -->
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+     <!-- Título de la página -->
+     <title>Presupuesto</title>
+</head>
+<body>
+   <nav> <!-- Barra de navegación -->
+       <a><img src="../images/logo.png" alt="imagen logo de la empresa"></a>
+       <a href="../index.html">Inicio</a>
+       <a href="contactos.html">Contacto</a>
+       <a class="pagina-actual" href="#">Presupuesto</a>
+       <a href="productos.html">Productos</a>
+   </nav>
+
+    <section> <!-- Sección formulario -->
+       <div class="filtro-fondo">
+        <div class="contenedor-formulario">
+          <form name="formulario" method="post" action="../index.html">
+            <div class="parte-formulario"> <!-- Nombre -->
+                <h3>Nombre:</h3>
+                <input type="text" name="nombre" autocomplete="on" placeholder="Ingresa tu nombre."
+                minlength="2" maxlength="30" required>
+            </div>
+            <div class="parte-formulario"> <!-- Email -->
+                <h3>Email:</h3>
+                <input type="email" name="email" autocomplete="on" placeholder="Ingresa tu correo."
+                maxlength="40" required>
+            </div>
+            <div class="parte-formulario"> <!-- Teléfono -->
+                <h3>Teléfono:</h3>
+                <input type="tel" pattern="[0-9]{9}" name="telefono" placeholder="Ingresa tu teléfono."
+                 required>
+            </div>
+            <div class="parte-formulario"> <!-- Información -->
+                <h3>Información:</h3>
+                <textarea minlength="15" maxlength="300" name="informacion" placeholder="Ingresa la descripción del producto que necesitas."
+                 required></textarea>
+            </div>
+            <div class="parte-formulario"> <!-- Checkbox y botón -->
+                <input type="checkbox" name="casilla" class="checkbox" required>
+                <span class="texto-checkbox">Aceptas los términos y condiciones.</span>
+                <br><button type="submit" autofocus>Enviar</button>
+            </div>
+          </form>
+        </div>
+       </div>
+    </section>
+
+    <footer> <!-- Pie de página -->
+        <div class="contenedor-textos-footer"> <!-- Contenedor -->
+         <div class="texto-footer-1"><a href="#">Política de privacidad</a><br>
+                                     <a href="#">Términos y condiciones</a><br>
+                                     adriancubosrubik@adrianrubik.com</div>
+         <div class="texto-footer-2"><a href="https://instagram.com"><ion-icon name="logo-instagram"></ion-icon></a>
+                                     <a href="https://facebook.com"><ion-icon name="logo-facebook"></ion-icon></a>
+                                     <a href="https://x.com"><ion-icon name="logo-twitter"></ion-icon></a></div>
+        </div>
+         <br><br><h4>© 2024 Cubos de Rubik Adrián</h4>
+     </footer>
+ </body>
+ </html>
